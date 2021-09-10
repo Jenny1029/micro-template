@@ -3,6 +3,11 @@ const path = require("path");
 
 module.exports = function override(config, env) {
     //do stuff with the webpack config...
-    config.output.path = path.join(path.dirname(config.output.path), "dist");
+    // 修改path目录
+    const path = require('path');
+    const paths = require('react-scripts/config/paths');
+    paths.appBuild = path.join(path.dirname(paths.appBuild), 'dist');
+    config.output.path = path.join(path.dirname(config.output.path), 'dist');
+    console.log(`custom output path - ${ config.output.path }`);
     return config;
 }
