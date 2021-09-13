@@ -6,6 +6,8 @@ module.exports = {
     config.output.libraryTarget = 'umd';
     config.output.jsonpFunction = `webpackJsonp_${name}`;
     config.output.globalObject = 'window';
+    config.output.path = __dirname + '/dist';
+    console.log(config);
 
     return config;
   },
