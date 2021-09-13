@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to="/micro" style={style}>Home</Link>
+        <Link to="/micro/" style={style}>Home</Link>
         {microAppList.map((item) => {
           return <Link to={item.activeRule} key={item.name} style={style}>{item.name}</Link>
         })}
