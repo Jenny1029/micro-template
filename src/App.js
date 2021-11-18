@@ -6,7 +6,7 @@ function App() {
     <Router basename={window.__POWERED_BY_QIANKUN__ ? '/submicro/app/subreact' : '/'}>
        {/* <div>这是sub-react</div> */}
      <div className="App">
-      <header className="App-header">
+      <header className="App-container">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           react 的子应用
