@@ -11,7 +11,7 @@ const style = {
 const App = () => {
   const [activeNav, setActiveNav] = useState(window.location.pathname)
   return (
-    <div className="App">
+    <div className="basic-container">
       <Router>
         <div className="nav-list">
           <Link to="/micro/" style={style}>我是基座导航</Link>
@@ -20,12 +20,12 @@ const App = () => {
           })}
         </div>
       </Router>
-      <header className="App-header">
+      <header className="basic-app-header">
         <div>
           基座内容+业务公共区
         </div>
       </header>
-      <div id="subapp" style={{  background: '#fdd', height: 'calc(100% - 15vh)'}}>
+      <div id="subapp" style={{ height: 'calc(100% - 15vh)'}}>
           这里是子应用内容区
       </div>
     </div>

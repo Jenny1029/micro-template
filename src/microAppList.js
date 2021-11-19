@@ -14,7 +14,6 @@ let microAppList = [
   },
 ]
 
-console.log(window.location)
 // 子应用支持远端调试
 // 获取url参数
 const params = new URL(window.location.href).searchParams;
